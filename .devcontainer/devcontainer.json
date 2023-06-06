@@ -3,11 +3,10 @@
     "image": "ghcr.io/rocker-org/devcontainer/r-ver:4.3",
     "features": {
         "ghcr.io/rocker-org/devcontainer-features/quarto-cli:latest": {
-            "version": "1",
-            "installChromium": true
+            "version": "1"
         },
         "ghcr.io/rocker-org/devcontainer-features/apt-packages:latest": {
-            "packages": "chromium,libudunits2-dev,libxtst6,libxt6,libmagick++-dev"
+            "packages": "libudunits2-dev,libxtst6,libxt6,libmagick++-dev"
         },
         "ghcr.io/rocker-org/devcontainer-features/r-packages:latest": {
             "packages": "tidyverse,here,httpgd,dplyr,devtools,rmarkdown"
