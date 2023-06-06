@@ -1,0 +1,138 @@
+---
+title: "Upskilling via Open-Source Software"
+author: Adam Sardar
+institute: LV= General Insurance
+format:
+  revealjs: 
+    incremental: true   
+    html-q-tags: true
+    theme: dark
+---
+
+## What we're here to talk about
+
+Underappreciated ways to use open-source software to upskill.
+
+## What this talk is not about
+
+- Not about git or git good practice
+- Not about functions/objects etc.
+- Certainly not about licenses!
+
+::: {.notes}
+No mention of pulls/rebases
+:::
+
+## Workshop content
+
+1. Level-up your understanding
+  - Issues systems allow you to see how top-tier developers operate
+2. Level-up your toolchain
+  - Codespaces + Co-pilot
+3. Level-up your ability to collaborate
+  - CI/CD, build systems, communication systems
+
+# Github Issues & Discussions
+
+1. Level-up your understanding
+
+## Open-source software today
+
+Wikipedia:
+
+<q> Open-source software (OSS) is computer software that is released under a license in which the copyright holder grants users the rights to use, study, change, and distribute the software and its source code</q>
+
+---
+
+- Can be tethered to sociopolitical values (e.g. copyleft licenses)
+  - I promised that I wouldn't talk about this ...
+
+[image of Stallman?]
+
+::: {.notes}
+Linux, Firefox, Chromium
+:::
+
+## Open-source != Amateur
+
+- Entire companies exist as open-source organisations
+  - Gitlab is an open-core company
+  - [Posit](https://posit.co/) (formerly [RStudio PBC](https://posit.co/blog/rstudio-pbc/)) is almost entirely open-source
+  - [Voltron Data](https://voltrondata.com/) (formerly [Ursa Labs](https://ursalabs.org/)) 
+
+## It's not just the code that is open
+
+
+- Ways of working
+  - What makes a good 
+- Architecture and stategic considerations
+- 
+
+# Tip: 'subscribe' to github projects
+
+People think to check stack overflow, but so rarely monitor the issue boards of popular tools.
+
+[Example of github watch]
+
+---
+
+[Inbox mailshot]
+
+---
+
+Some suggestions to start you off:
+
+Core language:
+
+R: [lintr](https://github.com/r-lib/lintr) project
+Python: [ruff](https://github.com/charliermarsh/ruff) (or [flake8](https://github.com/PyCQA/flake8) or black)
+
+More statistics focused:
+
+R: [glmmTMB](https://github.com/glmmTMB/glmmTMB)
+Python: [statsmodels](https://github.com/statsmodels/statsmodels) 
+
+---
+
+The point isn't to understand every ticket, but instead to develop
+an eye for interesting things to learn.
+
+
+Spending time on issue boards is a great way to hang-out
+'at the water-cooler' with expert developers, see their code
+and recieve direct mentorship.
+
+::: {.notes}
+Issues with [MREs](https://stackoverflow.com/help/minimal-reproducible-example) are the best for communication.
+
+Political arguments occuring over training in-office. But where are you based?
+Do you have a team of expert programmers around you?
+:::
+
+---
+
+MPL vs Apache license
+
+[Summary of license changes]
+
+What are the concerns of corporate entities in this space? What motivates language choice in different ecosystems?
+
+---
+
+R internals of GraalVM
+
+[Screenshot of data.table memory]
+
+---
+
+Sometimes you might consider other ways to spend your life ...
+
+[Wood whittling]
+https://github.com/docker/cli/issues/267#issuecomment-695149477
+
+### Workshop item
+
+What's the data science package that you use most? Watch that repo; you will learn a tonne.
+
+(actually do this - it's a check that people are logged in to github)
+
