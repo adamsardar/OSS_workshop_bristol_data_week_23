@@ -2,7 +2,7 @@
 
 Materials for the workshop 'LV=GI Workshop on Open Source Software', part of Bristol Data Week 2023.
 
-Workshop presented on Jun 7th 2023.
+[Workshop](https://www.eventbrite.co.uk/e/lvgi-workshop-on-open-source-software-in-person-tickets-594595831137) presented on Jun 7th 2023.
 
 ## LV=GI Workshop on Open Source Software
 
