@@ -2,6 +2,7 @@
 title: "Upskilling via Open-Source Software"
 author: Adam Sardar
 institute: LV= General Insurance
+date: 7-June-2023
 format:
   revealjs: 
     incremental: true   
@@ -9,30 +10,35 @@ format:
     theme: dark
 ---
 
-## What we're here to talk about
+## What we're here to talk about {.smaller}
 
-Underappreciated ways to use open-source software to upskill.
+![](level.jpeg)
 
-## What this talk is not about
+Underappreciated ways to use open-source software for upskilling purposes.
 
-- Not about git or git good practice
+Please ask questions at any time.
+
+## What this workshop is not about
+
+- Not about git or git good practice.
 - Not about functions/objects etc.
-- Certainly not about licenses!
-
-::: {.notes}
-No mention of pulls/rebases
-:::
+- Certainly not about OSS licenses!
+- I'm not teaching anybody to code today.
 
 ## Workshop content
 
-1. Level-up your understanding
-  - Issues systems allow you to see how top-tier developers operate
-2. Level-up your toolchain
-  - Codespaces + Co-pilot
-3. Level-up your ability to collaborate
-  - CI/CD, build systems, communication systems
+1. Level-up your understanding.
 
-# Github Issues & Discussions
+  - Issues boards: see how top-tier developers operate.
+
+2. Level-up your toolchain.
+
+  - Codespaces: scalable & reproducible development.
+
+3. Level-up your ability to collaborate.
+  - CI/CD and build systems.
+
+# Github Issues
 
 1. Level-up your understanding
 
@@ -42,97 +48,173 @@ Wikipedia:
 
 <q> Open-source software (OSS) is computer software that is released under a license in which the copyright holder grants users the rights to use, study, change, and distribute the software and its source code</q>
 
----
-
 - Can be tethered to sociopolitical values (e.g. copyleft licenses)
-  - I promised that I wouldn't talk about this ...
+  - (But I promised that I wouldn't talk about this ...)
 
-[image of Stallman?]
-
-::: {.notes}
-Linux, Firefox, Chromium
-:::
+- Giving up this innate copyright transforms _everything_
 
 ## Open-source != Amateur
 
-- Entire companies exist as open-source organisations
-  - Gitlab is an open-core company
-  - [Posit](https://posit.co/) (formerly [RStudio PBC](https://posit.co/blog/rstudio-pbc/)) is almost entirely open-source
-  - [Voltron Data](https://voltrondata.com/) (formerly [Ursa Labs](https://ursalabs.org/)) 
+- Entire companies exist as open-source organisations.
+  - Gitlab is an open-core company.
+    - Even their documentation .
+    - Check out their [Data Team](https://about.gitlab.com/handbook/business-technology/data-team/) handbook).
+  - [Posit](https://posit.co/) (formerly [RStudio PBC](https://posit.co/blog/rstudio-pbc/)) almost entirely open-source.
+  - [Voltron Data](https://voltrondata.com/) (formerly [Ursa Labs](https://ursalabs.org/)) supports arrow.
+
+## Operational advantages to OSS
+
+![Example from LV=GI](LVGItubular.png)
+
+## OSS enables intra-company collaboration
+
+![Contributions from elsewhere in the buissness](InternalContribution.png)
 
 ## It's not just the code that is open
 
-
 - Ways of working
-  - What makes a good 
+  - What makes a good size contribution
+  - How to discuss issues with package maintainers
 - Architecture and stategic considerations
-- 
 
-# Tip: 'subscribe' to github projects
+## Tip: 'watch' repos 
 
 People think to check stack overflow, but so rarely monitor the issue boards of popular tools.
 
-[Example of github watch]
+![Hit 'Watch'](h2oaidatatable.png)
 
 ---
 
-[Inbox mailshot]
+![Keep updated](Inbox.png)
 
----
+## Suggestions to start you off
 
-Some suggestions to start you off:
+::: {.nonincremental}
 
 Core language:
 
-R: [lintr](https://github.com/r-lib/lintr) project
-Python: [ruff](https://github.com/charliermarsh/ruff) (or [flake8](https://github.com/PyCQA/flake8) or black)
+- R: [lintr](https://github.com/r-lib/lintr) project
+- Python: [ruff](https://github.com/charliermarsh/ruff) (flake8 but in Rust)
 
 More statistics focused:
 
-R: [glmmTMB](https://github.com/glmmTMB/glmmTMB)
-Python: [statsmodels](https://github.com/statsmodels/statsmodels) 
+- R: [glmmTMB](https://github.com/glmmTMB/glmmTMB)
+- Python: [statsmodels](https://github.com/statsmodels/statsmodels) 
 
----
+:::
 
-The point isn't to understand every ticket, but instead to develop
+## Total knowledge isn't the goal
+
+- The point isn't to understand every ticket, but instead to develop
 an eye for interesting things to learn.
 
-
-Spending time on issue boards is a great way to hang-out
+- Spending time on issue boards is a great way to hang-out
 'at the water-cooler' with expert developers, see their code
 and recieve direct mentorship.
 
 ::: {.notes}
 Issues with [MREs](https://stackoverflow.com/help/minimal-reproducible-example) are the best for communication.
 
-Political arguments occuring over training in-office. But where are you based?
-Do you have a team of expert programmers around you?
+Political arguments occuring over training in-office. But where are you based? Do you have a team of expert programmers around you? Example of Hanborough.
 :::
 
----
-
-MPL vs Apache license
-
-[Summary of license changes]
-
-What are the concerns of corporate entities in this space? What motivates language choice in different ecosystems?
+# Examples
 
 ---
 
-R internals of GraalVM
+[MPLv2 vs Apache license](https://github.com/h2oai/datatable/pull/1659)
 
-[Screenshot of data.table memory]
+![License woes](MPLv2vsApache.png)
+
+- What are the concerns of corporate entities in this space? 
+- What motivates language choice in different ecosystems?
 
 ---
 
-Sometimes you might consider other ways to spend your life ...
+[Internals of GraalVM and how they interact with R](https://github.com/oracle/fastr/issues/16)
 
-[Wood whittling]
-https://github.com/docker/cli/issues/267#issuecomment-695149477
+![Low-level memory issue](Rinternals.png)
+
+- Chance to recieve details about complicated aspects of R internals (with references!)
+
+---
+
+Sometimes you might even [find other ways](https://github.com/docker/cli/issues/267#issuecomment-695149477) to spend your life ...
+
+![Wood whittling](WoodWhittle.png)
+
+---
 
 ### Workshop item
 
-What's the data science package that you use most? Watch that repo; you will learn a tonne.
+- What's the data-ecosystem package that you use most? 
 
-(actually do this - it's a check that people are logged in to github)
+- Watch that repo; you will learn a tonne!
+  - (actually do this - it's a check that people are logged in to github and ready for the next step)
 
+
+# Codespaces & co-pilot
+
+2. Level-up your toolchain
+
+## What is a codespace {.scrollable}
+
+![](codespaces.png){width=80%}
+
+An infinitely scalable, reproducible [development environment](https://docs.github.com/en/codespaces/overview#contacting-us-about-codespaces).
+
+## Time to get hands-on!
+
+Open up codespaces
+
+![Click 'Code'](codespace1.png)
+
+---
+
+![Click 'Create codespace on main'](codespace2.png)
+
+## Python Codespace projects  {.smaller}
+
+See https://github.com/adamsardar?tab=repositories
+
+::: {.nonincremental}
+
+- [statsmodels](https://github.com/adamsardar/statsmodels)
+  - Inspect the [OLS notebook](https://www.statsmodels.org/dev/examples/notebooks/generated/ols.html)
+  - `./examples/notebooks/ols.ipynb` (should open automatically)
+
+- [tubular](https://github.com/adamsardar/tubular)
+  - Take a look at the capping notebook
+  - `./examples/capping/CappingTransformer.ipynb` (should open automatically)
+
+:::
+
+## R Codespace projects  {.smaller}
+
+::: {.nonincremental}
+
+See https://github.com/adamsardar?tab=repositories
+
+- [broom](https://github.com/adamsardar/broom)
+  - Load up the [Introduction to Broom vignette](https://cran.r-project.org/web/packages/broom/vignettes/broom.html) 
+  - `vignettes/broom.Rmd` (should open automatically)
+
+- [tidyr](https://github.com/adamsardar/tidyr)
+  - Load up the [nesting vignette](https://cran.r-project.org/web/packages/tidyr/vignettes/nest.html) 
+  - `./vignettes/nest.Rmd` (should open automatically)
+
+:::
+
+# Build systems
+
+3. Level-up your ability to collaborate
+
+### What happens when it's more than just you?
+
+- Make automation count
+
+### It works on my machine
+
+### Code review
+
+### 
