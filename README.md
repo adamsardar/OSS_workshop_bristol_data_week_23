@@ -1,3 +1,7 @@
+<!-- badges: start -->
+[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
+  <!-- badges: end -->
+
 ## OSS_workshop_bristol_data_week_23
 
 Materials for the workshop 'LV=GI Workshop on Open Source Software', part of Bristol Data Week 2023.
