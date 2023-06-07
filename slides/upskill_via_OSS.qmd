@@ -12,6 +12,19 @@ format:
     embed-resources: true
 ---
 
+## Please grab a copy of these slides {.smaller}
+
+![See my github page](githubSlides.png)
+
+::: {.nonincremental}
+Search adamsardar github:
+
+- `OSS_workshop_bristol_data_week_23` repository
+- `slides` -> `upskill_via_OSS.html`
+- Useful to follow links etc.
+
+:::
+
 ## What we're here to talk about {.smaller}
 
 ![](level.jpeg)
@@ -225,9 +238,10 @@ See https://github.com/adamsardar?tab=repositories
 ## Continuous integration
 
 Language communities [publish best practice now](https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python)
- - 'How to be a Python developer'
- - Stand on their shoulders!
- - Automate team standards
+
+- 'How to be a Python developer'
+- Stand on their shoulders!
+- Automate team standards
 
 ## Example CI pipeline {.scrollable}
 
