@@ -8,6 +8,8 @@ format:
     incremental: true   
     html-q-tags: true
     theme: dark
+    standalone: true
+    embed-resources: true
 ---
 
 ## What we're here to talk about {.smaller}
@@ -209,12 +211,62 @@ See https://github.com/adamsardar?tab=repositories
 
 3. Level-up your ability to collaborate
 
-### What happens when it's more than just you?
+## What happens when it's more than just you?
 
-- Make automation count
+- Dependency resolution horror.
+- Bugs that can't be pinned down.
+- 'It works on my machine'
 
-### It works on my machine
+## Solution
 
-### Code review
+- Make automation count.
+- High performance companies spend a fortune on build systems. 
 
-### 
+## Continuous integration
+
+Language communities [publish best practice now](https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python)
+ - 'How to be a Python developer'
+ - Stand on their shoulders!
+ - Automate team standards
+
+## Example CI pipeline {.scrollable}
+
+```
+
+name: Python package
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.7", "3.8", "3.9", "3.10", "3.11"]
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install ruff pytest
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+      - name: Lint with ruff
+        run: |
+          # stop the build if there are Python syntax errors or undefined names
+          ruff --format=github --select=E9,F63,F7,F82 --target-version=py37 .
+          # default set of ruff rules with GitHub Annotations
+          ruff --format=github --target-version=py37 .
+      - name: Test with pytest
+        run: |
+          pytest
+```
+
+## Wrap-up
+
+- Tools are available and in the open!
